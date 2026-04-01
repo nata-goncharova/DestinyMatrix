@@ -1,37 +1,4 @@
-function Points(person) {
-  document.querySelector('#apoint').textContent = person.points.apoint;
-  document.querySelector('#bpoint').textContent = person.points.bpoint;
-  document.querySelector('#cpoint').textContent = person.points.cpoint;
-  document.querySelector('#dpoint').textContent = person.points.dpoint;
-  document.querySelector('#epoint').textContent = person.points.epoint;
-  document.querySelector('#fpoint').textContent = person.points.fpoint;
-  document.querySelector('#gpoint').textContent = person.points.gpoint;
-  document.querySelector('#hpoint').textContent = person.points.hpoint;
-  document.querySelector('#ipoint').textContent = person.points.ipoint;
-  document.querySelector('#jpoint').textContent = person.points.jpoint;
-  document.querySelector('#kpoint').textContent = person.points.kpoint;
-  document.querySelector('#lpoint').textContent = person.points.lpoint;
-  document.querySelector('#mpoint').textContent = person.points.mpoint;
-  document.querySelector('#npoint').textContent = person.points.npoint;
-  document.querySelector('#opoint').textContent = person.points.opoint;
-  document.querySelector('#ppoint').textContent = person.points.ppoint;
-  document.querySelector('#qpoint').textContent = person.points.qpoint;
-  document.querySelector('#rpoint').textContent = person.points.rpoint;
-  document.querySelector('#spoint').textContent = person.points.spoint;
-  document.querySelector('#tpoint').textContent = person.points.tpoint;
-  document.querySelector('#upoint').textContent = person.points.upoint;
-  document.querySelector('#vpoint').textContent = person.points.vpoint;
-  document.querySelector('#wpoint').textContent = person.points.wpoint;
-  document.querySelector('#xpoint').textContent = person.points.xpoint;
-  document.querySelector('#f2point').textContent = person.points.f2point;
-  document.querySelector('#f1point').textContent = person.points.f1point;
-  document.querySelector('#g1point').textContent = person.points.g1point;
-  document.querySelector('#g2point').textContent = person.points.g2point;
-  document.querySelector('#i1point').textContent = person.points.i1point;
-  document.querySelector('#i2point').textContent = person.points.i2point;
-  document.querySelector('#h1point').textContent = person.points.h1point;
-  document.querySelector('#h2point').textContent = person.points.h2point;
-}
+function Points(person) { document.querySelector('#apoint').textContent = person.points.apoint; document.querySelector('#bpoint').textContent = person.points.bpoint; document.querySelector('#cpoint').textContent = person.points.cpoint; document.querySelector('#dpoint').textContent = person.points.dpoint; document.querySelector('#epoint').textContent = person.points.epoint; document.querySelector('#fpoint').textContent = person.points.fpoint; document.querySelector('#gpoint').textContent = person.points.gpoint; document.querySelector('#hpoint').textContent = person.points.hpoint; document.querySelector('#ipoint').textContent = person.points.ipoint; document.querySelector('#jpoint').textContent = person.points.jpoint; document.querySelector('#kpoint').textContent = person.points.kpoint; document.querySelector('#lpoint').textContent = person.points.lpoint; document.querySelector('#mpoint').textContent = person.points.mpoint; document.querySelector('#npoint').textContent = person.points.npoint; document.querySelector('#opoint').textContent = person.points.opoint; document.querySelector('#ppoint').textContent = person.points.ppoint; document.querySelector('#qpoint').textContent = person.points.qpoint; document.querySelector('#rpoint').textContent = person.points.rpoint; document.querySelector('#spoint').textContent = person.points.spoint; document.querySelector('#tpoint').textContent = person.points.tpoint; document.querySelector('#upoint').textContent = person.points.upoint; document.querySelector('#vpoint').textContent = person.points.vpoint; document.querySelector('#wpoint').textContent = person.points.wpoint; document.querySelector('#xpoint').textContent = person.points.xpoint; document.querySelector('#f2point').textContent = person.points.f2point; document.querySelector('#f1point').textContent = person.points.f1point; document.querySelector('#g2point').textContent = person.points.g2point; document.querySelector('#g1point').textContent = person.points.g1point; document.querySelector('#i2point').textContent = person.points.i2point; document.querySelector('#i1point').textContent = person.points.i1point; document.querySelector('#h2point').textContent = person.points.h2point; document.querySelector('#h1point').textContent = person.points.h1point; }
 
 function ChartHeart() {
   // Physics
@@ -51,15 +18,8 @@ function ChartHeart() {
   mulphysics.textContent = chartHeart.mulphysics;
   const resultphysics = document.querySelector("#resultphysics");
   resultphysics.textContent = reduceNumber(
-    chartHeart.sahphysics +
-    chartHeart.ajphysics +
-    chartHeart.vishphysics +
-    chartHeart.anahphysics +
-    chartHeart.manphysics +
-    chartHeart.svadphysics +
-    chartHeart.mulphysics
+    chartHeart.sahphysics + chartHeart.ajphysics + chartHeart.vishphysics + chartHeart.anahphysics + chartHeart.manphysics + chartHeart.svadphysics + chartHeart.mulphysics
   );
-
   // Energy
   const sahenergy = document.querySelector("#sahenergy");
   sahenergy.textContent = chartHeart.sahenergy;
@@ -77,15 +37,8 @@ function ChartHeart() {
   mulenergy.textContent = chartHeart.mulenergy;
   const resultenergy = document.querySelector("#resultenergy");
   resultenergy.textContent = reduceNumber(
-    chartHeart.sahenergy +
-    chartHeart.ajenergy +
-    chartHeart.vishenergy +
-    chartHeart.anahenergy +
-    chartHeart.manenergy +
-    chartHeart.svadenergy +
-    chartHeart.mulenergy
+    chartHeart.sahenergy + chartHeart.ajenergy + chartHeart.vishenergy + chartHeart.anahenergy + chartHeart.manenergy + chartHeart.svadenergy + chartHeart.mulenergy
   );
-
   // Emotions
   const sahemotions = document.querySelector("#sahemotions");
   sahemotions.textContent = chartHeart.sahemotions;
@@ -103,13 +56,7 @@ function ChartHeart() {
   mulemotions.textContent = chartHeart.mulemotions;
   const resultemotions = document.querySelector("#resultemotions");
   resultemotions.textContent = reduceNumber(
-    chartHeart.sahemotions +
-    chartHeart.ajemotions +
-    chartHeart.vishemotions +
-    chartHeart.anahemotions +
-    chartHeart.manemotions +
-    chartHeart.svademotions +
-    chartHeart.mulemotions
+    chartHeart.sahemotions + chartHeart.ajemotions + chartHeart.vishemotions + chartHeart.anahemotions + chartHeart.manemotions + chartHeart.svademotions + chartHeart.mulemotions
   );
 }
 
@@ -155,7 +102,6 @@ const calculateYear = (year) => {
 };
 
 const calculatePoints = (aPoint, bPoint, cPoint) => {
-
   dpoint = reduceNumber(aPoint + bPoint + cPoint);
   epoint = reduceNumber(aPoint + bPoint + cPoint + dpoint);
   fpoint = reduceNumber(aPoint + bPoint);
@@ -163,36 +109,30 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   hpoint = reduceNumber(dpoint + aPoint);
   ipoint = reduceNumber(cPoint + dpoint);
   jpoint = reduceNumber(dpoint + epoint);
-
   npoint = reduceNumber(cPoint + epoint);
   lpoint = reduceNumber(jpoint + npoint);
   mpoint = reduceNumber(lpoint + npoint);
   kpoint = reduceNumber(jpoint + lpoint);
-
   qpoint = reduceNumber(npoint + cPoint);
   rpoint = reduceNumber(jpoint + dpoint);
   spoint = reduceNumber(aPoint + epoint);
   tpoint = reduceNumber(bPoint + epoint);
-
   opoint = reduceNumber(aPoint + spoint);
   ppoint = reduceNumber(bPoint + tpoint);
-
   upoint = reduceNumber(fpoint + gpoint + hpoint + ipoint);
   vpoint = reduceNumber(epoint + upoint);
   wpoint = reduceNumber(spoint + epoint);
   xpoint = reduceNumber(tpoint + epoint);
-
-  f2point = reduceNumber(fpoint + upoint);
-  f1point = reduceNumber(fpoint + f2point);
-  g2point = reduceNumber(gpoint + upoint);
-  g1point = reduceNumber(gpoint + g2point);
-  i2point = reduceNumber(ipoint + upoint);
-  i1point = reduceNumber(ipoint + i2point);
-  h2point = reduceNumber(hpoint + upoint);
-  h1point = reduceNumber(hpoint + h2point);
-
+  // Исправлено: f1point и f2point поменяны местами
+  f1point = reduceNumber(fpoint + upoint);
+  f2point = reduceNumber(fpoint + f1point);
+  g1point = reduceNumber(gpoint + upoint);
+  g2point = reduceNumber(gpoint + g1point);
+  i1point = reduceNumber(ipoint + upoint);
+  i2point = reduceNumber(ipoint + i1point);
+  h1point = reduceNumber(hpoint + upoint);
+  h2point = reduceNumber(hpoint + h1point);
   // года
-
   afpoint = reduceNumber(aPoint + fpoint);
   af1point = reduceNumber(aPoint + afpoint);
   af2point = reduceNumber(aPoint + af1point);
@@ -213,7 +153,7 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   bg3point = reduceNumber(bgpoint + bg1point);
   bg4point = reduceNumber(bgpoint + gpoint);
   bg5point = reduceNumber(bgpoint + bg4point);
-  bg6point = reduceNumber(bg4point + gpoint);
+  bg6point = reduceNumber(bg4point + gPoint);
   gcpoint = reduceNumber(gpoint + cPoint);
   gc1point = reduceNumber(gpoint + gcpoint);
   gc2point = reduceNumber(gpoint + gc1point);
@@ -257,7 +197,6 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
   socialpurpose = reduceNumber(femalepoint + malepoint);
   generalpurpose = reduceNumber(perspurpose + socialpurpose);
   planetarypurpose = reduceNumber(socialpurpose + generalpurpose);
-
   years = {
     afpoint: afpoint,
     af1point: af1point,
@@ -315,8 +254,7 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     ha4point: ha4point,
     ha5point: ha5point,
     ha6point: ha6point
-  }
-
+  };
   points = {
     apoint: aPoint,
     bpoint: bPoint,
@@ -351,20 +289,16 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     h2point: h2point,
     h1point: h1point,
   };
-
   purposes = {
     skypoint: skypoint,
     earthpoint: earthpoint,
     perspurpose: perspurpose,
-
     femalepoint: femalepoint,
     malepoint: malepoint,
     socialpurpose: socialpurpose,
-
     generalpurpose: generalpurpose,
-    planetarypurpose: planetarypurpose
+    planetarypurpose: planetarypurpose,
   };
-
   chartHeart = {
     sahphysics: aPoint,
     ajphysics: opoint,
@@ -373,7 +307,6 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     manphysics: epoint,
     svadphysics: jpoint,
     mulphysics: cPoint,
-
     sahenergy: bPoint,
     ajenergy: ppoint,
     vishenergy: tpoint,
@@ -381,7 +314,6 @@ const calculatePoints = (aPoint, bPoint, cPoint) => {
     manenergy: epoint,
     svadenergy: npoint,
     mulenergy: dpoint,
-
     sahemotions: reduceNumber(aPoint + bPoint),
     ajemotions: reduceNumber(opoint + ppoint),
     vishemotions: reduceNumber(spoint + tpoint),
@@ -412,13 +344,12 @@ decodematrixbtn.addEventListener("click", function () {
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.header-right');
-
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-})
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
 
 document.querySelectorAll('.header__link').forEach(link => link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}))
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
